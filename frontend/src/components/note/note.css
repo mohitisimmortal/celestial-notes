@@ -1,0 +1,32 @@
+.note-container {
+    background-color: var(--color1);
+    color: black;
+    margin: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.note-container h2 {
+    margin-bottom: 8px;
+}
+
+.delete {
+    padding: .7rem;
+    margin-top: 1rem;
+    background-color: var(--color1);
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .note-container {
+        margin: 12px;
+    }
+}

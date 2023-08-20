@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --color1: #f7d44c;
+  --color2: #f6ecc9;
+  --gray-color: gray;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+/* CSS Reset */
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: black;
+}
+
+section {
+  padding: 5rem 7%;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* utilities classes ----- */
+.josefin-font {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@media (max-width:500px) {
+  section {
+    padding: 5rem 3%;
+  }
+}

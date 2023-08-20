@@ -1,0 +1,34 @@
+.signup {
+    color: white;
+    background-image: radial-gradient(rgb(139, 139, 139) 1px, transparent 0);
+    background-size: 40px 30px;
+    height: 100vh;
+}
+
+.signup h2 {
+    margin-bottom: 20px;
+}
+
+.signup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.signup button {
+    padding: 10px 20px;
+    background-color: var(--color1);
+    color: #000000;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signup button:hover {
+    background-color: var(--color2);
+}
