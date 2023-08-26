@@ -129,12 +129,12 @@ const Homepage = () => {
 
   return (
     <section className="homepage">
-      <div className="addicon" onClick={handleAddNoteClick}>
+      <div className="addicon" onClick={() => handleAddNoteClick()}>
         +
       </div>
 
       {isAddNoteOpen && (
-        <form className="add-note-form" onSubmit={handleAddNoteSubmit}>
+        <form className="add-note-form" onSubmit={() => handleAddNoteSubmit()}>
           <input
             type="text"
             placeholder="Note Title"
@@ -149,12 +149,12 @@ const Homepage = () => {
             required
           />
           <button type="submit" >Add Note</button>
-          <button type="button" onClick={handleAddNoteCancel}>Cancel</button>
+          <button type="button" onClick={() => handleAddNoteCancel()}>Cancel</button>
         </form>
       )}
 
       {isEditNoteOpen && selectedNote && (
-        <form className="edit-note-form" onSubmit={handleEditNoteSubmit}>
+        <form className="edit-note-form" onSubmit={() => handleEditNoteSubmit()}>
           <input
             type="text"
             placeholder="Edit Note Title"
@@ -169,7 +169,7 @@ const Homepage = () => {
             required
           />
           <button type="submit">Save</button>
-          <button type="button" onClick={handleEditNoteCancel}>Cancel</button>
+          <button type="button" onClick={() => handleEditNoteCancel()}>Cancel</button>
         </form>
       )}
 

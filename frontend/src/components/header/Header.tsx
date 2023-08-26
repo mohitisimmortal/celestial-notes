@@ -31,8 +31,8 @@ function Header() {
             </div>
             <div>
                 {userIsLoggedIn ? (
-                    <button className='logoutbtn' onClick={handleLogout}>
-                        Logout
+                    <button className='logoutbtn' onClick={() => handleLogout()}>
+                    Logout
                     </button>
                 ) : (
                     <>

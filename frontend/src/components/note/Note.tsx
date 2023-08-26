@@ -72,7 +72,7 @@ const Note = () => {
                 <>
                     <h2>{noteData.title}</h2>
                     <p>{noteData.content}</p>
-                    <button onClick={handleDeleteNote} className='delete'>Delete Note</button>
+                    <button onClick={() => handleDeleteNote()} className='delete'>Delete Note</button>
                 </>
             ) : (
                 <p>Note not found</p>

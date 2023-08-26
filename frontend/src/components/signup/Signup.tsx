@@ -35,7 +35,7 @@ const Signup: React.FC = () => {
   return (
     <section className='signup'>
       <h2>Signup</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         {/* Form fields */}
         <div>
           <label htmlFor="username">Username</label>

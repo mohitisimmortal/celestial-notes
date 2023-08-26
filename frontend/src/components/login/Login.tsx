@@ -43,7 +43,7 @@ const Login: React.FC = () => {
     return (
         <section className='login'>
             <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => handleSubmit(e)}>
                 {/* Form fields */}
                 <div>
                     <label htmlFor="email">Email</label>
